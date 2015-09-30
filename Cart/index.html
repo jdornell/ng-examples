@@ -13,19 +13,23 @@
 		    <link rel="stylesheet" href="../css/main.css">
     </head>
     <body ng-app="cartExample" ng-controller="mainController" ng-cloak>
-  		
-      <h1>{{pageTitle}}</h1>
       
-  		<div>
-          <input type="text" ng-model="item.name" />
-          <a href="#" ng-click="addItem()">add item</a>
-          <ul>
-            <li ng-repeat="item in items">{{item.name}} <a href="#" ng-click="removeItem()">x</a></li>
-          </ul>  
-      </div>
+        		<div>
+            
+                <h1>{{pageTitle}}</h1>
 
-  	<script src="../lib/js/angular.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
+                <input type="text" ng-model="item.name" />
+
+                <a href="#" ng-click="addItem()">add item</a>
+
+                <ul>
+                  <li ng-repeat="item in items">{{item.name}} <a href="#" ng-click="removeItem()">x</a></li>
+                </ul>  
+
+            </div>
+
+      	<script src="../lib/js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
     </body>
 </html>
