@@ -9,19 +9,24 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <base href="/my-base">
+        
     </head>
     <body ng-app="myApp" ng-controller="mainController">
 
     <div>
-        <a href="/about">Link</a>
+        <a href="#home">home</a>
+        <a href="#about">page 1</a>
+        <a href="#contact">page 2</a>
+
+        <div ng-view></div>
     </div>
 
-    <div ng-view></div>
+    <!-- Displays the content -->
     
     <script src="../lib/js/angular.min.js"></script>
+    <script src="../lib/js/angular-route.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/controller.js"></script>
     <script src="js/directive.js"></script>
+    <script src="js/controller.js"></script>
     </body>
 </html>
