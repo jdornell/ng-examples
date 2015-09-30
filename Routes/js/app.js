@@ -1,3 +1,3 @@
 // Define Angular module
-angular.module('myApp', ['ngRoute']);
+angular.module('routeExample', ['ngRoute']);
 

@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('myApp')
+angular.module('routeExample')
 
 // Define Angular controller
-.controller('mainController', function($scope) {
+.controller('mainController', ['$scope', function($scope) {
 
-    //$scope.message = 'About';
+    //$scope.message = '';
 
-});
+}]);

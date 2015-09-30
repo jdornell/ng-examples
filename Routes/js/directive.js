@@ -1,4 +1,4 @@
-angular.module('myApp')
+angular.module('routeExample')
 
 	.config(function($routeProvider) {
 

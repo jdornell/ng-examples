@@ -1,10 +1,10 @@
 'use strict';
 
-angular.module('myApp')
+angular.module('boilerExample')
 
 // Define Angular controller
-.controller('mainController', function($scope) {
+.controller('mainController', ['$scope', function($scope) {
 
-    $scope.message = 'message';
+    $scope.message = 'AngularJS Boiler Template';
 
-});
+}]);

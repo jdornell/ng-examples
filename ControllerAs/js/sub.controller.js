@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('myApp')
+angular.module('controllerAsExample')
 
 // Define Sub Controller
-.controller('subController', function($scope) {
+.controller('subController', ['$scope', function($scope) {
 
     var vm = this;
     vm.title = 'Sub Title';
 
-});
+}]);

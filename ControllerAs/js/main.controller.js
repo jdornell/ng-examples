@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('myApp')
+angular.module('controllerAsExample')
 
 // Define Main Controller
-.controller('mainController', function($scope) {
+.controller('mainController', ['$scope', function($scope) {
 
     var vm = this;
     vm.title = 'Title';
 
-});
+}]);
