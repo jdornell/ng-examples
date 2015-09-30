@@ -5,7 +5,7 @@ angular.module('cartExample')
 // Define Angular controller
 .controller('mainController', ['$scope', function($scope) {
 
-    //$scope.message = 'message';
+    $scope.pageTitle = 'Basic cart example with AngularJS';
 
     $scope.items = [
     		{
